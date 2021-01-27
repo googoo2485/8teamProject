@@ -1,0 +1,26 @@
+.t1{
+    
+    
+    background-color:#87CEEB;
+    padding: 8px 12px;
+    list-style: none;
+}
+.t1 li{
+    list-style: none;
+    padding-top: 5px;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.footer_subTitle{
+    list-style: none;
+    font-size: 21px;
+}
+.footer_wrap{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 8px 12px;
+}
