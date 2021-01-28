@@ -1,28 +1,59 @@
-.t1{
-    
-    
+.footer_wrap{
+    display: grid;
+    margin-top : 15%;
+    column-gap: 1em;;
+    grid-template-columns : repeat(4,1fr); 
+    grid-template-rows: repeat(2,1fr);
+}
+.footer{
     background-color:#87CEEB;
-    padding: 8px 12px;
     list-style: none;
 }
-.t1 li{
-    list-style: none;
-    padding-top: 5px;
-}
+/* 이거 나중에 다른 링크랑 혼동될 수 있으니까 class 따로 줘야할 듯ㄷ */
 a{
     text-decoration: none;
     color:white;
+    font-size : 2vh;
 }
 .footer_subTitle{
     list-style: none;
-    font-size: 21px;
+    font-size : 3vh;
 }
-.footer_wrap{
+#footer1{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start : 1;
+    grid-row-end : 3;
+    background-color: rgb(199, 95, 95);
+}
+#footer2{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start : 1;
+    grid-row-end : 3;
+    background-color: rgb(223, 214, 88);
+}
+#footer3{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start : 1;
+    grid-row-end : 3;
+    background-color: rgb(118, 201, 187);
+}
+#footer4{
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start : 1;
+    grid-row-end : 3;
+    background-color: rgb(88, 95, 192);
+}
+
+/* 혹시 flex로 다시 짤 일 있으면 이걸로 살리기 */
+/* .footer_wrap{
     justify-content: space-between;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 8px 12px;
-}
-
+    padding: 1% 2%;
+} */
 
