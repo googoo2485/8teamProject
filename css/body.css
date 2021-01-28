@@ -1,54 +1,70 @@
-#boxWrapper{
+/* 각 디바이스 환경에 최적화하기 위해 max, min으로 예외 처리*/
+body{
+    max-width : 80%;
+    max-height: 100%;
+    margin : 0 auto;
+}
+/* 각 박스 안 제목 리스트 */
+ul{
+    list-style: none;
+}
+/* 바디 그리드 전체 설정 */
+/* 추후 행 또는 열 길이 변경 시 repeat(4,1fr, 2fr, 3fr)(4번 반복, 개별 행열 길이 설정)사용 */
+/* 21.01.28 JE : align, justify-items 추가하기 */
+#gridWrapper{
     display : grid;
-    grid-template-columns: 10;
-    grid-template-rows: 10;
+    grid-template-columns : repeat(6,1fr); 
+    grid-template-rows : repeat(29,1fr);
+    gap : 20px;
+    align-content : center;
+    justify-content: center;
     background-color: #87CEEB;
 }
-#box1{
-    display : grid;
-    grid-column-start: 2;
+/* 바디 그리드 박스 개별 설정 */
+#gridBox1{
+    grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start : 1;
-    grid-row-end : 2;
-    background-color: #87CEEB;
+    grid-row-end : 15;
+    background-color: #eb9387;
 }
-#box2{
-    display : grid;
+
+#gridBox2{
     grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start : 2;
-    grid-row-end : 3;
-    background-color: #87CEEB;
-}
-#box3{
-    display : grid;
-    grid-column-start: 4;
     grid-column-end: 5;
-    grid-row-start : 3;
-    grid-row-end : 4;
-    background-color: #87CEEB;
+    grid-row-start : 1;
+    grid-row-end : 15;
+    background-color: #dceb87;
 }
-#box4{
-    display : grid;
+
+#gridBox3{
     grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start : 4;
-    grid-row-end : 5;
-    background-color: #87CEEB;
-}
-#box5{
-    display : grid;
-    grid-column-start: 6;
     grid-column-end: 7;
-    grid-row-start : 5;
-    grid-row-end : 6;
-    background-color: #87CEEB;
+    grid-row-start : 1;
+    grid-row-end : 15;
+    background-color: #87eba8;
 }
-#box6{
-    display : grid;
-    grid-column-start: 7;
-    grid-column-end: 8;
-    grid-row-start : 6;
-    grid-row-end : 7;
-    background-color: #87CEEB;
+
+#gridBox4{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start : 15;
+    grid-row-end : 30;
+    background-color: #8987eb;
+}
+
+#gridBox5{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start : 15;
+    grid-row-end : 30;
+    background-color: #cb87eb;
+}
+
+#gridBox6{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start : 15;
+    grid-row-end : 30;
+    background-color: #b287eb;
 }
