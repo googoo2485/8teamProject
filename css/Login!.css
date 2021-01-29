@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-body {
+.login {
   font-family: "Noto Sans KR", sans-serif;
   display: flex;
   justify-content: center;
@@ -15,11 +15,11 @@ body {
   background: url("img/full\ \(2\).jpg") no-repeat center;
   background-size: cover;
 }
-/* body::before {
+.login::before {
     content: "";
     position: absolute; z-index: 1;
     top: 0; right: 0; bottom: 0; left: 0;
-} */
+}
 .Login_form {
   position: relative;
   z-index: 2;

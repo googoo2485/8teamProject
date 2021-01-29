@@ -8,34 +8,35 @@
     <script src="jquery-3.4.1.js"></script>
 </head>
 <body>
-    <section class="Login_form">
-        <h1>Blockchain Community</h1> 
-        <form action="">
-            <div class="int_area">
-                <input type="text" name="id" id="id"
-                autocomplete="off" required>
-                <label for="e-mail">E-MAIL</label>
-            </div>
-
-            <div class="int_area">
-                <input type="password" name="pw" id="pw"
-                autocomplete="off" required>
-                <label for="pw">PASSWORD</label>
-            </div>
-
-            <div class="int_area">
-                <input type="password" name="pw" id="pw"
-                autocomplete="off" required>
-                <label for="username">USERNAME</label>
-            </div>
-
-            <div class="btn_area">
-                <button type="submit">SIGN UP</button>
-            </div>
-        </form>
+    <div class= "signUp">
+        <section class="Login_form">
+            <h1>Blockchain Community</h1> 
+            <form action="">
+                <div class="int_area">
+                    <input type="text" name="id" id="id"
+                    autocomplete="off" required>
+                    <label for="e-mail">E-MAIL</label>
+                </div>
     
-    </section>
-
+                <div class="int_area">
+                    <input type="password" name="pw" id="pw"
+                    autocomplete="off" required>
+                    <label for="pw">PASSWORD</label>
+                </div>
+    
+                <div class="int_area">
+                    <input type="password" name="pw" id="pw"
+                    autocomplete="off" required>
+                    <label for="username">USERNAME</label>
+                </div>
+    
+                <div class="btn_area">
+                    <button type="submit">SIGN UP</button>
+                </div>
+            </form>
+        
+        </section>
+    </div>
     <script>
         let id = $('id');
         let pw = $('pw');
@@ -56,6 +57,5 @@
             }
         })
     </script>
-    
 </body>
 </html>
