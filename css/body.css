@@ -23,48 +23,32 @@ ul{
 /* 바디 그리드 박스 개별 설정 */
 #gridBox1{
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 7;
     grid-row-start : 1;
     grid-row-end : 15;
     background-color: #eb9387;
 }
 
 #gridBox2{
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start : 1;
-    grid-row-end : 15;
-    background-color: #dceb87;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start : 15;
+    grid-row-end : 30;
+    background-color: #d5eb87;
 }
 
 #gridBox3{
-    grid-column-start: 5;
+    grid-column-start: 4;
     grid-column-end: 7;
-    grid-row-start : 1;
-    grid-row-end : 15;
-    background-color: #87eba8;
+    grid-row-start : 15;
+    grid-row-end : 17;
+    background-color: #87ebb1;
 }
 
 #gridBox4{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start : 15;
-    grid-row-end : 30;
-    background-color: #8987eb;
-}
-
-#gridBox5{
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start : 15;
-    grid-row-end : 30;
-    background-color: #cb87eb;
-}
-
-#gridBox6{
-    grid-column-start: 5;
+    grid-column-start: 4;
     grid-column-end: 7;
-    grid-row-start : 15;
+    grid-row-start : 17;
     grid-row-end : 30;
     background-color: #b287eb;
 }
