@@ -14,57 +14,50 @@ ul {
 #gridWrapper {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(29, 1fr);
+  grid-template-rows: repeat(59, 1fr);
   gap: 20px;
   align-content: center;
   justify-content: center;
-  background-color: #87ceeb;
+  /* background-color: #87ceeb; */
 }
 /* 바디 그리드 박스 개별 설정 */
 #gridBox1 {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 7;
   grid-row-start: 1;
-  grid-row-end: 15;
-  background-color: #eb9387;
+  grid-row-end: 30;
+  border : solid 5px#87ceeb;
+  /* background-color: #eb9387; */
 }
 
 #gridBox2 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 15;
-  background-color: #dceb87;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 30;
+  grid-row-end: 60;
+  border : solid 5px#87ceeb;
+  /* background-color: #d9eb87; */
 }
 
 #gridBox3 {
-  grid-column-start: 5;
+  grid-column-start: 4;
   grid-column-end: 7;
-  grid-row-start: 1;
-  grid-row-end: 15;
-  background-color: #87eba8;
+  grid-row-start: 30;
+  grid-row-end: 35;
+  border : solid 5px#87ceeb;
+  /* background-color: #87eba8; */
 }
 
 #gridBox4 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 15;
-  grid-row-end: 30;
-  background-color: #8987eb;
-}
-
-#gridBox5 {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 15;
-  grid-row-end: 30;
-  background-color: #cb87eb;
-}
-
-#gridBox6 {
-  grid-column-start: 5;
+  grid-column-start: 4;
   grid-column-end: 7;
-  grid-row-start: 15;
-  grid-row-end: 30;
-  background-color: #b287eb;
+  grid-row-start: 35;
+  grid-row-end: 60;
+  border : solid 5px#87ceeb;
+  /* background-color: #9187eb; */
 }
+
+
+
+
+
