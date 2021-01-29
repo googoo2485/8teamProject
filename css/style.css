@@ -1,7 +1,9 @@
-.t1 {
-  background-color: #87ceeb;
-  padding: 8px 12px;
-  list-style: none;
+.footer_wrap {
+  display: grid;
+  margin-top: 15%;
+  column-gap: 1em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 .footer {
   background-color: #87ceeb;
