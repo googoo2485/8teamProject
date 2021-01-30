@@ -1,0 +1,12 @@
+#sub{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+#subLogo{
+    width : 15%;
+    height : 15%;
+}
+
+
+
