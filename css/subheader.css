@@ -10,8 +10,8 @@
     margin-top : 20px;
     margin-left : 20px;
     display: grid;
-    grid-template-columns: repeat(1, 200px 4fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(1, 300px 4fr);
+    grid-template-rows: repeat(1,300px 4fr);
 }
 
 #subMenu{
@@ -25,12 +25,15 @@
 
 #subLogo{
     display : flex;
-    width : 200px;
+    justify-content: center;
+    align-content: center;
+    width : 250px;
 }
 .subject{
     grid-row  : 2;
-    grid-column : 1;
+    grid-column : 2;
     margin-left : 20px;
     font-size: 80px;
     font-family: "PlayfairDisplay";
+    border-top : 2px solid #87ceeb;
 }

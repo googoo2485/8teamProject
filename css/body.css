@@ -9,8 +9,6 @@ ul {
   list-style: none;
 }
 /* 바디 그리드 전체 설정 */
-/* 추후 행 또는 열 길이 변경 시 repeat(4,1fr, 2fr, 3fr)(4번 반복, 개별 행열 길이 설정)사용 */
-/* 21.01.28 JE : align, justify-items 추가하기 */
 #gridWrapper {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
