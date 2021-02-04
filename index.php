@@ -12,8 +12,6 @@
     <link rel="stylesheet" href="./css/sub_footer.css">
     <link rel="stylesheet" href="./css/sg_tabLinkStyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    
     <script src="https://kit.fontawesome.com/af0efa6459.js" crossorigin="anonymous"></script>
     
 </head>
