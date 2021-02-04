@@ -3,34 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABOUT</title>
-
-    <style>
-        #member{
-            grid-column: 2;
-            grid-row: 3;
-            display : flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            margin-top  :3%;
     
-        }
-        #alight{
-            width  :auto;
-            height : 500px;
-
-        }
-        #nine{
-            width  :auto;
-            height : 500px;
-        }
-        #je{
-            width  :auto;
-            height : 500px;
-        }
-
-    </style>
-    
-    <link rel="stylesheet" href="../../css/subheader.css">
+    <link rel="stylesheet" href="../../css/sub_subheader.css">
 </head>
 <body>
     <!-- Header 고정 -->
@@ -64,6 +38,6 @@
 
     </div>
 
-    <script src = "../../index.js"></script>
+
 </body>
 </html>

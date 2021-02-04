@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>8ver</title>
    
-    <link rel="stylesheet" href="../css/body.css">
-    <link rel="stylesheet" href="../css/headStyle!.css">
-    <link rel="stylesheet" href="../css/Login!.css">
-    <link rel="stylesheet" href="../css/signUp.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/tabLinkStyle.css">
+    <link rel="stylesheet" href="./css/sub_body.css">
+    <link rel="stylesheet" href="./css/sub_headStyle!.css">
+    <link rel="stylesheet" href="./css/light_Login!.css">
+    <link rel="stylesheet" href="./css/light_signUp.css">
+    <link rel="stylesheet" href="./css/sub_footer.css">
+    <link rel="stylesheet" href="./css/sg_tabLinkStyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     
     
@@ -21,7 +21,7 @@
 <!-- HEADER -->
 <div id="header">
     <!-- LOGO -->
-    <img id="img_navbar_logo" src="./img/logo.png" alt="">
+    <img id="img_navbar_logo" src="./php/img/logo.png" alt="">
         <!-- SEARCH -->
         <div class="navbar_search">
             <input id="navbar_input" type="text" placeholder="검색어 입력">
@@ -65,7 +65,7 @@
             <!-- <ul>
                 <li>HOT NEWS!</li>
             </ul> -->
-            <img id = "home" src="./img2/blue.png" alt="test">
+            <img id = "home" src="./php/img2/blue.png" alt="test">
         </div>
 
         <div id = "gridBox2" class = "gridBox">
@@ -94,16 +94,16 @@
     <article class="footer">
         <nav class="footer_wrap">
             <ul id = "footer1">
-                <a class = "footerlink" href="./subpage/about.html" target = "_blank"><li class="footer_subTitle">ABOUT</li></a>
+                <a class = "footerlink" href="./php/sub/about.php" target = "_blank"><li class="footer_subTitle">ABOUT</li></a>
             </ul>
             <ul id = "footer2">
-                <a class = "footerlink" href="./subpage/terms.html" target = "_blank"><li class="footer_subTitle">TERMS OF SERVICE</li></a>
+                <a class = "footerlink" href="./php/sub/terms.php" target = "_blank"><li class="footer_subTitle">TERMS OF SERVICE</li></a>
             </ul>
             <ul id = "footer3">
-                <a class = "footerlink" href="./subpage/faq.html" target = "_blank"><li class="footer_subTitle">FAQ</li></a>
+                <a class = "footerlink" href="./php/sub/faq.php" target = "_blank"><li class="footer_subTitle">FAQ</li></a>
             </ul>
             <ul id = "footer4">
-                <a class = "footerlink" href="./subpage/privacy.html" target = "_blank"><li class="footer_subTitle">PRIVACY POLICY</li></a>
+                <a class = "footerlink" href="./php/sub/privacy.php" target = "_blank"><li class="footer_subTitle">PRIVACY POLICY</li></a>
             </ul>
         </nav>
         <div id = "warning">

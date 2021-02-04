@@ -1,0 +1,22 @@
+#member{
+    grid-column: 2;
+    grid-row: 3;
+    display : flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top  :3%;
+
+}
+#alight{
+    width  :auto;
+    height : 500px;
+
+}
+#nine{
+    width  :auto;
+    height : 500px;
+}
+#je{
+    width  :auto;
+    height : 500px;
+}

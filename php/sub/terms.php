@@ -4,17 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TERMS OF SERVICE</title>
 
-
-    <style>
-        #terms_container{
-            margin :  20%;
-            grid-column-start: 1;
-            grid-column-end: 3;
-            grid-row-start: 3;
-            margin-top : 50px;
-        }
-    </style>
-    <link rel="stylesheet" href="../../css/subheader.css">
+    <link rel="stylesheet" href="../../css/sub_subheader.css">
 </head>
 <body>
         <div id = "sub">

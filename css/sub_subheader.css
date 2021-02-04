@@ -1,10 +1,10 @@
 @font-face{
     font-family : "PlayfairDisplay";
-    src : url("/css/font/PlayfairDisplay-Regular.ttf");
+    src : url("../font/PlayfairDisplay-Regular.ttf");
 }
 @font-face{
     font-family : "NanumMyeongjo";
-    src : url("/css/font/NanumMyeongjo-Bold.ttf");
+    src : url("../css/font/NanumMyeongjo-Bold.ttf");
 }
 #sub{
     margin-top : 20px;
@@ -36,4 +36,18 @@
     font-size: 80px;
     font-family: "PlayfairDisplay";
     border-top : 2px solid #87ceeb;
+}
+#privacy_container{
+    margin :  20%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    margin-top : 50px;
+}
+#terms_container{
+    margin :  20%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    margin-top : 50px;
 }
