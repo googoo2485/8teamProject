@@ -14,13 +14,13 @@
             margin-top : 50px;
         }
     </style>
-    <link rel="stylesheet" href="/css/subheader.css">
+    <link rel="stylesheet" href="../../css/subheader.css">
 </head>
 <body>
         <!-- Header 고정 -->
         <div id = "sub">
             <div >
-                <img id = "subLogo" src="./img/logo.png" alt="logo">
+                <img id = "subLogo" src="../img/logo.png" alt="logo">
             </div>
             <ul id = "subMenu">
                 <li id = "subMenu1">커뮤니티</li>
