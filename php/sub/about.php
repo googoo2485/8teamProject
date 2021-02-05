@@ -3,7 +3,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ABOUT</title>
-    
     <link rel="stylesheet" href="../../css/sub_subheader.css">
 </head>
 <body>
@@ -21,23 +20,17 @@
         </ul>
         <div class = "subject">
             ABOUT
-        </div>
-
-        
+        </div>        
         <div id = "member">
             <div id = "aboutLayer"></div>
         </div>
     </div>
-
     <div id = "stage">
         <div>
             <a href="1.jpg"><img id = "alight" src="../img2/light.PNG" alt="김한빛"></a>
             <a href="2.jpg"><img id = "nine" src="../img2/sangoo.PNG" alt="강상구"></a>
             <a href="3.jpg"><img id = "je" src="../img2/je.PNG" alt="제정원"></a>
         </div>
-
     </div>
-
-
 </body>
 </html>

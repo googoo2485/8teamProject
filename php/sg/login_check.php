@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include 'idConnect.php';
 
 $id = $_POST['id'];
@@ -10,7 +10,9 @@ $result = $conn->query($check);
 if($result->num_rows==1){?>
 
 <script>alert("로그인 성공"); </script>
-<?php header('location:/php/sg/index_result.php'); 
+<?php 
+ $_SESSION["log_check"] = true;
+ header('location:/php/sg/index_result.php'); 
    
 
 
