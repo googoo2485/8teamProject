@@ -11,7 +11,7 @@
     <div class = "login">
         <section class="Login_form">
             <h1>Blockchain Community</h1> 
-            <form action="/php/sg/login_check.php" method="POST">
+            <form action="../sg/login_check.php" method="POST">
                 <div class="int_area">
                     <input type="text" name="id" id="id"
                     autocomplete="off" required>
