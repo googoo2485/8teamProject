@@ -27,8 +27,10 @@
         </div>
             <!-- LOGIN & MEMBER -->
             <div class = "homeButton">
-                <button class="navbar_btn" id="navbar_btn1">로그인</button>
+               
+                <button class="navbar_btn" id="navbar_btn1" onclick="location.href='./php/light/login.php'">로그인</button>
                 <button class="navbar_btn" id="navbar_btn2">글쓰기</button>
+                           
             </div>
 </div>
     <!-- MENUBAR -->

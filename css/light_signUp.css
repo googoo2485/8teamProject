@@ -30,7 +30,7 @@
 }
 .Login_form h1 {
   font-size: 32px;
-  color: #fff;
+  color: #999;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -38,6 +38,7 @@
   width: 400px;
   position: relative;
   margin-top: 20px;
+  color: #999;
 }
 .int_area:first-child {
   margin-top: 0;
@@ -49,7 +50,7 @@
   border: none;
   border-bottom: 1px solid #999;
   font-size: 18px;
-  color: #fff;
+  color: #999;
   outline: none;
 }
 .int_area label {
@@ -93,7 +94,7 @@
   width: 100%;
   height: 50px;
   background-color: #166cea;
-  color: #fff;
+  color: #999;
   font-size: 20px;
   border: none;
   border-radius: 25px;
