@@ -1,44 +1,16 @@
-<?php
-    // mysql 접속
-    $conn = mysqli_connect('localhost','root','brian1313','jjick');
-
-    // 값 가져오기
-    $id = mysqli_real_escape_string($conn, $_REQUEST['id']);
-    $pw = mysqli_real_escape_string($conn, $_REQUEST['pw']);
-
-    $sql = "
-        SELECT * FROM userData WHERE id='$id'
-    ";
-
-    $result = mysqli_query($conn,$sql);
-    $result = mysqli_fetch_array($result);
-
-    if($result === null){
-        
-    ?>
-    <script>
-        alert('잘못입력하셨습니다!');
-        history.back();
-    </script>
-    <?php
-    }else if($result != null){
-        if($result['pw'] == $pw){
-            ?>
-            <script>
-                alert('로그인 성공!');
-            <?php
-                header("location: ../index_result.html?id=".$id);
-            ?>
-            </script>
-            <?php
-        }else{
-            ?>
-        <script>
-            alert('잘못입력하셨습니다!');
-            history.back();
-        </script>
-        <?php
-        }
-    }
+<?php 
+session_reset();
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

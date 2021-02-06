@@ -12,6 +12,7 @@ if($result->num_rows==1){?>
 <script>alert("로그인 성공"); </script>
 <?php 
  $_SESSION["log_check"] = true;
+ $_SESSION["userID"] = $id;
  header('location:/php/sg/index_result.php'); 
    
 
