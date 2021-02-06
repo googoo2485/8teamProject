@@ -75,7 +75,7 @@
     <article class="footer">
         <nav class="footer_wrap">
             <ul id = "footer1">
-                <a class = "footerlink" href="./php/sub/test.php" target = "_blank"><li class="footer_subTitle">ABOUT</li></a>
+                <a class = "footerlink" href="./php/sub/about.php" target = "_blank"><li class="footer_subTitle">ABOUT</li></a>
             </ul>
             <ul id = "footer2">
                 <a class = "footerlink" href="./php/sub/terms.php" target = "_blank"><li class="footer_subTitle">TERMS OF SERVICE</li></a>

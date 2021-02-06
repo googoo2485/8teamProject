@@ -6,6 +6,8 @@
     font-family : "NanumMyeongjo";
     src : url("../css/font/NanumMyeongjo-Bold.ttf");
 }
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
 #sub{
     margin-top : 20px;
     margin-left : 20px;
@@ -37,6 +39,7 @@
     font-family: "PlayfairDisplay";
     border-top : 2px solid #87ceeb;
 }
+/* privacy */
 #privacy_container{
     margin :  20%;
     grid-column-start: 1;
@@ -44,6 +47,23 @@
     grid-row-start: 3;
     margin-top : 50px;
 }
+.pol1{
+    border-radius: 5px;
+    border : 5px solid rgb(2, 2, 141);
+    box-shadow: 0px 5px 3px 0px darkblue;
+    padding : 20px;
+    color : rgb(209, 200, 241);
+    background-color: rgb(2, 2, 141);
+}
+.pol2, .pol3, .pol4, .pol5, .pol6, .pol7, .pol8, .pol9, .pol10{
+    border-radius: 5px;
+    box-shadow: 0px 5px 7px 0px darkblue;
+    margin-bottom: 15px;
+    padding : 20px;
+    background-color: rgb(244, 248, 255);
+}
+
+/* terms */
 #terms_container{
     margin :  20%;
     grid-column-start: 1;
@@ -51,3 +71,63 @@
     grid-row-start: 3;
     margin-top : 50px;
 }
+.tag{
+    color : white;
+    width : 150px;
+    background-color :rgb(2, 2, 141);
+    border-radius: 5px;
+    text-align: center;
+    border-right-style: ridge;
+}
+.ter{
+    border-style :double;
+    padding : 20px;
+    box-shadow: 0px 0px 0px 3px rgb(0, 0, 58);
+}
+/* faq */
+.faq_container{
+    margin : 20%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end : 10;
+    margin-top : 50px;
+    font-family : "Poppins", sans-serif;
+}
+.faq_container .faqBox{
+    position : relative;
+    margin : 10px 20px;
+}
+.faq_container .faqBox .ques{
+    position : relative;
+    padding : 10px;
+    background : #2694af;
+    color : #ffffff;
+    cursor : pointer;
+}
+.faq_container .faqBox .ques ::before{
+    content : '+';
+    position : absolute;
+    top  :50%;
+    right : 20px;
+    transform : translateY(-50%);
+    font-size : 1.5em;
+}
+.faq_container .faqBox .active .ques ::before{
+    content : '-';
+}
+.faq_container .faqBox .ans{
+    position : relative;
+    padding : 10px;
+    background : #fff;
+    height : 100px;
+    overflow : hidden;
+    transition : 0.5s;
+    overflow-y :visible;
+}
+/* before, active 되는 브라우저에서 테스트 시 hidden으로 바꾸고 하기! */
+.faq_container .faqBox .active .ans{
+    height : 1500px;
+    padding : 10px;
+}
+
