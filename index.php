@@ -42,39 +42,20 @@
             <li class="navbar_menu_item">공지</li>
         </ul>
 
-
-        <!-- <div class="container">
-            <div id="menu" class="menu"><li><a href=""><i class="fas fa-bars"></i>전체</a></li></div>
-            <div id="menu" class="menu"><li><a href=""><i class="fas fa-crown"></i>오늘의 인기글</a></li></div>
-            <div id="menu" class="menu"><li><a href=""><i class="fas fa-broadcast-tower"></i>코인잡담</a></li></div>
-            <div id="menu" class="menu"><li><a href=""><i class="fab fa-bitcoin"></i>코인정보</a></li></div>  
-            <div id="menu" class="menu"><li><a href=""><i class="fas fa-gift"></i>이벤트</a></li></div>
-            <div id="menu" class="menu"><li><a href=""><i class="far fa-smile"></i>유머/수다</a></li></div>
-            <div id="menu" class="menu"><li><a href=""><i class="fab fa-fort-awesome"></i>명예의전당</a></li></div>
-            <div id="menu" class="menu"><li><a href=""><i class="fab fa-fort-awesome"></i>명예의전당</a></li></div>
-        </div> -->
-
     <!-- BODY -->
-
-   
-
 
     <div id = "gridWrapper">
 
         <div id = "gridBox1" class = "gridBox">
-            <!-- <ul>
-                <li>HOT NEWS!</li>
-            </ul> -->
-            <img id = "home" src="./php/img2/blue.png" alt="test">
+            <!-- <img id = "home" src="./php/img2/blue.png" alt="test"> -->
         </div>
-
+        <br>
         <div id = "gridBox2" class = "gridBox">
-            <ul>
-                <li>Blockchain Community</li>
-                <li>블록체인 개발 이야기</li>
-                <li>블록체인 기업 이야기</li>
-                <li>블록체인 창업 이야기</li>
-            </ul>
+            <div id = "coding">
+                Programming
+            </div>
+            <div id = "company">Company</div>
+            <div id = "business">Business</div>
         </div>
 
         <div id = "gridBox3" class = "gridBox">
@@ -94,7 +75,7 @@
     <article class="footer">
         <nav class="footer_wrap">
             <ul id = "footer1">
-                <a class = "footerlink" href="./php/sub/about.php" target = "_blank"><li class="footer_subTitle">ABOUT</li></a>
+                <a class = "footerlink" href="./php/sub/test.php" target = "_blank"><li class="footer_subTitle">ABOUT</li></a>
             </ul>
             <ul id = "footer2">
                 <a class = "footerlink" href="./php/sub/terms.php" target = "_blank"><li class="footer_subTitle">TERMS OF SERVICE</li></a>
