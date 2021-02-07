@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700);
+
 /* 각 디바이스 환경에 최적화하기 위해 max, min으로 예외 처리*/
 body {
   max-width: 80%;
@@ -35,37 +37,82 @@ ul {
   grid-column-end: 7;
   grid-row-start: 1;
   grid-row-end: 7;
-  /* border : solid 5px#87ceeb; */
-  /* background-color: #eb9387; */
+  border : 2px solid skyblue;
+
 }
 #gridBox2 {
+  /* 전체 그리드 설정 */
   grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column-end: 5;
   grid-row-start: 7;
   grid-row-end: 15;
-  border : solid 1px#87ceeb;
-  /* background-color: #d9eb87; */
+  /* 내부 그리드 설정 */
+  display : grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr 5fr 5fr;
+  align-items: center;
+  color : white;
+  background-color :rgba(128, 221, 209, 0.438);
+  border-radius: 15px;
+  width : auto;
+  height : 100%;
+}
+.push :hover{
+  margin-top : 15px;
+  margin-bottom : 5px;
+  box-shadow : 0px 0px 0px 0px #007144;
+}
+
+#coding{
+  grid-column : 1;
+  grid-row : 1;
+  text-align : center;
+  background-color:#5DC8CD ;
+  box-shadow : 0px 3px 2px 0px #007144;
+  margin : 0 auto;
+  border-radius : 5px;
+  transition : all 0.2s;
+
+}
+
+#company{
+  grid-column : 2;
+  grid-row : 1;
+  text-align : center;
+  background-color:#5DC8CD ;
+  box-shadow : 0px 3px 2px 0px #007144;
+  margin : 0 auto;
+  border-radius : 5px;
+  transition : all 0.2s;
+}
+#business{
+  grid-column : 3;
+  grid-row : 1;  
+  text-align : center;
+  background-color:#5DC8CD ;
+  box-shadow : 0px 3px 2px 0px #007144;
+  margin : 0 auto;
+  border-radius : 5px;
+  transition : all 0.2s;
 }
 
 #gridBox3 {
-  grid-column-start: 4;
+  grid-column-start: 5;
   grid-column-end: 7;
   grid-row-start: 7;
   grid-row-end: 9;
   border : solid 1px#87ceeb;
-  /* background-color: #87eba8; */
+  
 }
 
 #gridBox4 {
-  grid-column-start: 4;
+  grid-column-start: 5;
   grid-column-end: 7;
   grid-row-start: 9;
   grid-row-end: 15;
   border : solid 1px#87ceeb;
-  /* background-color: #9187eb; */
+
 }
-
-
 
 
 
