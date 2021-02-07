@@ -73,6 +73,7 @@
         $exchanges = $instance->exchanges()->get(0,50);
         print_r($result);
         $symbols = $instance->symbols()->get(0,50);
+        ?>
 
 
         <div id = "gridBox4" class = "gridBox">
