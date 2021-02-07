@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp</title>
-    <link rel="stylesheet" href="signUp.css">
+    <link rel="stylesheet" href="../../css/light_signUp.css">
     <script src="jquery-3.4.1.js"></script>
 </head>
 <body>
     <section class="Login_form">
         <h1>Blockchain Community</h1> 
-        <form action="">
+        <form action="../sg/addUserDate.php" method="POST">
             <div class="int_area">
-                <input type="text" name="id" id="id"
+                <input type="text" name="email" id="id"
                 autocomplete="off" required>
                 <label for="e-mail">E-MAIL</label>
             </div>
@@ -24,7 +24,7 @@
             </div>
 
             <div class="int_area">
-                <input type="password" name="pw" id="pw"
+                <input type="text" name="name" id="pw"
                 autocomplete="off" required>
                 <label for="username">USERNAME</label>
             </div>

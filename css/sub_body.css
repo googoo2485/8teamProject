@@ -4,6 +4,8 @@
 body {
   max-width: 80%;
   max-height: 100%;
+  min-width: 20%;
+  min-height: 20%;
   margin: 0 auto;
 }
 /* 각 박스 안 제목 리스트 */

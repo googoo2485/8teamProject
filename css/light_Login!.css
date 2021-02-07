@@ -45,7 +45,7 @@
   border: none;
   border-bottom: 1px solid #999;
   font-size: 18px;
-  color: #fff;
+  color: #999;
   outline: none;
 }
 .int_area label {
@@ -53,7 +53,7 @@
   left: 10px;
   top: 15px;
   font-size: 18px;
-  color: #999;
+  color:#999;
   transition: all 0.5s ease;
 }
 .int_area label.warming {

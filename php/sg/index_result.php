@@ -1,25 +1,24 @@
+<?php include 'session_loginCheck.php';?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>8ver</title>
-   
-    <link rel="stylesheet" href="./css/sub_body.css">
-    <link rel="stylesheet" href="./css/sub_headStyle!.css">
-    <link rel="stylesheet" href="./css/light_Login!.css">
-    <link rel="stylesheet" href="./css/light_signUp.css">
-    <link rel="stylesheet" href="./css/sub_footer.css">
-    <link rel="stylesheet" href="./css/sg_tabLinkStyle.css">
+    <title>8ver</title>   
+    <link rel="stylesheet" href="../../css/sub_body.css">
+    <link rel="stylesheet" href="../../css/sub_headStyle!.css">
+    <link rel="stylesheet" href="../../css/light_Login!.css">
+    <link rel="stylesheet" href="../../css/light_signUp.css">
+    <link rel="stylesheet" href="../../css/sub_footer.css">
+    <link rel="stylesheet" href="../../css/sg_tabLinkStyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/af0efa6459.js" crossorigin="anonymous"></script>
-    
 </head>
 <body>
 <!-- HEADER -->
 <div id="header">
     <!-- LOGO -->
-    <img id="img_navbar_logo" src="./php/img/logo.png" alt="">
+    <img id="img_navbar_logo" src="../../php/img/logo.png" alt="">
         <!-- SEARCH -->
         <div class="navbar_search">
             <input id="navbar_input" type="text" placeholder="검색어 입력">
@@ -27,12 +26,10 @@
         </div>
             <!-- LOGIN & MEMBER -->
             <div class = "homeButton">
-               
-                <button class="navbar_btn" id="navbar_btn1" onclick="location.href='./php/light/login.php'">로그인</button>
+                <button class="navbar_btn" id="navbar_btn1" onclick="location.href='./LogOut.php'">로그아웃</button>
                 <button class="navbar_btn" id="navbar_btn2">글쓰기</button>
-                           
             </div>
-</div>
+        </div>
     <!-- MENUBAR -->
         <ul class="navbar_menu">
             <li class="navbar_menu_item">커뮤니티</li>
@@ -41,48 +38,43 @@
             <li class="navbar_menu_item">정보</li>
             <li class="navbar_menu_item">공지</li>
         </ul>
-
+        <!-- <div class="container">
+            <div id="menu" class="menu"><li><a href=""><i class="fas fa-bars"></i>전체</a></li></div>
+            <div id="menu" class="menu"><li><a href=""><i class="fas fa-crown"></i>오늘의 인기글</a></li></div>
+            <div id="menu" class="menu"><li><a href=""><i class="fas fa-broadcast-tower"></i>코인잡담</a></li></div>
+            <div id="menu" class="menu"><li><a href=""><i class="fab fa-bitcoin"></i>코인정보</a></li></div>  
+            <div id="menu" class="menu"><li><a href=""><i class="fas fa-gift"></i>이벤트</a></li></div>
+            <div id="menu" class="menu"><li><a href=""><i class="far fa-smile"></i>유머/수다</a></li></div>
+            <div id="menu" class="menu"><li><a href=""><i class="fab fa-fort-awesome"></i>명예의전당</a></li></div>
+            <div id="menu" class="menu"><li><a href=""><i class="fab fa-fort-awesome"></i>명예의전당</a></li></div>
+        </div> -->
     <!-- BODY -->
-
     <div id = "gridWrapper">
-
         <div id = "gridBox1" class = "gridBox">
-            <!-- <img id = "home" src="./php/img2/blue.png" alt="test"> -->
+            <!-- <ul>
+                <li>HOT NEWS!</li>
+            </ul> -->
+            <img id = "home" src="../../php/img2/blue.png" alt="test">
         </div>
-        <br>
         <div id = "gridBox2" class = "gridBox">
-            <div id = "coding">
-                Programming
-            </div>
-            <div id = "company">Company</div>
-            <div id = "business">Business</div>
+            <ul>
+                <li>Blockchain Community</li>
+                <li>블록체인 개발 이야기</li>
+                <li>블록체인 기업 이야기</li>
+                <li>블록체인 창업 이야기</li>
+            </ul>
         </div>
-
         <div id = "gridBox3" class = "gridBox">
             <ul>
                 <li>암호화폐 종목 배너</li>
-
             </ul>
         </div>
-        <?php
-
-        require_once __DIR__ . '/../vendor/autoload.php'; // Autoload files using Composer autoload
-
-        // use\RestApis\Blockchain\Constants;
-
-        $exchanges = $instance->exchanges()->get(0,50);
-        print_r($result);
-        $symbols = $instance->symbols()->get(0,50);
-        ?>
-
-        ?>
         <div id = "gridBox4" class = "gridBox">
             <ul>
                 <li>정부 사업</li>
             </ul>
         </div>
     </div>
-
     <!-- FOOTER -->
     <article class="footer">
         <nav class="footer_wrap">
