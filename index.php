@@ -61,8 +61,19 @@
         <div id = "gridBox3" class = "gridBox">
             <ul>
                 <li>암호화폐 종목 배너</li>
+
             </ul>
         </div>
+        <?php
+
+        require_once __DIR__ . '/../vendor/autoload.php'; // Autoload files using Composer autoload
+
+        use \RestApis\Blockchain\Constants;
+
+        $exchanges = $instance->exchanges()->get(0,50);
+        print_r($result);
+        $symbols = $instance->symbols()->get(0,50);
+
 
         <div id = "gridBox4" class = "gridBox">
             <ul>
