@@ -13,11 +13,11 @@
     </div>
     <div id = "commu_list">
         <ul class = "commu_page">
-            <li>내용<span>작성자</span><span>날짜</span></li>
-            <li><strong>#</strong><a href = "#">안녕하세요 제정원입니다.</a><span>제정원</span><span>날짜</span></li>
-            <li><strong>#</strong><a href = "#">안녕하세요 날씨가 춥습니다.</a><span>작성자</span><span>날짜</span></li>
-            <li><strong>#</strong><a href = "#">새해 복 많이 받으세요.</a><span>작성자</span><span>날짜</span></li>
-            <li><strong>#</strong><a href = "#">지금은 겨울입니다.</a><span>작성자</span><span>날짜</span></li>
+            <li>내용<span>조회수</span><span>작성자</span><span>날짜</span></li>
+            <li><strong>#</strong><a href = "#">안녕하세요 제정원입니다.</a><span>5</span><span>제정원</span><span>날짜</span></li>
+            <li><strong>#</strong><a href = "#">안녕하세요 날씨가 춥습니다.</a><span>2</span><span>작성자</span><span>날짜</span></li>
+            <li><strong>#</strong><a href = "#">새해 복 많이 받으세요.</a><span>10</span><span>작성자</span><span>날짜</span></li>
+            <li><strong>#</strong><a href = "#">지금은 겨울입니다.</a><span>7</span><span>작성자</span><span>날짜</span></li>
         </ul>
     </div>
 
