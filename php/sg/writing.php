@@ -45,6 +45,6 @@ session_start() ?>
         <button type="submit" class ="footer_button">완료</button>
        
     </div>
-        </form>
+    </form>
 </body>
 </html>
