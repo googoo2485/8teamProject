@@ -17,7 +17,7 @@
 	
 	<div class="page">
 		<header class="header">
-			<h1 class="website-title">8VER</h1>
+			<img src="../img/logo2.png" alt="logo">
 			<form class="search-form">
 				<input type="search">
 				<input type="submit" value="찾기">
@@ -43,11 +43,9 @@
 		<section class="primary">
 			<ul class="card-list">
 				<li class="card-item">
-					<figure class="card-image" style="background-image: url()">
-						<img src="" alt="일분이">
-					</figure>
+						<img src="../img/logo2.png" alt="logo">
 					<div class="card-desc">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit libero in ratione dicta nihil corporis illo odio, voluptatem a nam!
+						Lorem ipsum 
 					</div>
 				</li>
 				<li class="card-item">
