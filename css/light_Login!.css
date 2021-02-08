@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url("img/full\ \(2\).jpg") no-repeat center;
+  background-color: #eeeeee;
   background-size: cover;
 }
 .login::before {
@@ -26,7 +26,7 @@
 }
 .Login_form h1 {
   font-size: 32px;
-  color: #fff;
+  color: black;
   text-align: center;
   margin-bottom: 60px;
 }
