@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글</title>
+    
+</head>
+<body>
+   
 <?php
 session_start();
 include 'idConnect.php';
@@ -38,3 +49,5 @@ include 'idConnect.php';
                 <button class="view_btn1" onclick="location.href='./delete.php?num=<?=$number?>&id=<?=$ID?>'">삭제</button>
         </div>
 
+        </body>
+</html>

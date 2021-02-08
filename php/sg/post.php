@@ -16,28 +16,7 @@
     
 ?>
 
-<?php
-        // board테이블에서 idx를 기준으로 내림차순해서 5개까지 표시
-          $sql = "select * from post order by idx desc limit 0,5";
-          $sql_user="SELECT * FROM user WHERE name = 'id'"; 
-        $result=  mysqli_query($conn,$sql);
-        while($postDATA = mysqli_fetch_array($result)){
- 
-?>
 
-<?php echo '<p>',"NO:",$postDATA['idx']?>
-
-<?php echo "제목:" .$postDATA[ 'title' ],"&nbsp" ?>
-
-<?php echo "내용:",'<a href="">',$postDATA[ 'content' ],'</a>'  ?>
-<?php echo "작성시간:", $postDATA[ 'created' ] ?>
-<?php echo "삭제:", $postDATA[ 'id' ] ?>
-
-
-<?php }
-
-
-?>
 
 
 
