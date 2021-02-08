@@ -28,7 +28,7 @@ session_start() ?>
     <div class="writingContainer">       
         <div class="gridBox" id="box"></div>
             <div class="gridBox" id="box2">
-    <form action="/php/sg/postCheck.php" method="POST">
+    <form action="./postCheck.php" method="POST">
         <div class="Title">
             <ul>
                 <li><textarea name="title" class="textarea_tit" placeholder="제목을 입력하세요"></textarea></li>

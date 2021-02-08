@@ -1,3 +1,7 @@
+<?php 
+include '../sg/idConnect.php';
+
+session_start()?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -8,18 +12,56 @@
     <link rel = "stylesheet" href = "../../css/commu.css">
 </head>
 <body>
-    <div class= "commu_header">
+<div class= "commu_header">
         <img class = "commu_logo" src="../img2/8ver.png" alt="8ver">
     </div>
     <div id = "commu_list">
         <ul class = "commu_page">
-            <li>내용<span>조회수</span><span>작성자</span><span>날짜</span></li>
-            <li><strong>#</strong><a href = "#">안녕하세요 제정원입니다.</a><span>5</span><span>제정원</span><span>날짜</span></li>
-            <li><strong>#</strong><a href = "#">안녕하세요 날씨가 춥습니다.</a><span>2</span><span>작성자</span><span>날짜</span></li>
-            <li><strong>#</strong><a href = "#">새해 복 많이 받으세요.</a><span>10</span><span>작성자</span><span>날짜</span></li>
-            <li><strong>#</strong><a href = "#">지금은 겨울입니다.</a><span>7</span><span>작성자</span><span>날짜</span></li>
-        </ul>
-    </div>
+            <li>제목<span>조회수</span><span>작성자</span><span>날짜</span></li> 
 
+<?php
+       
+        $PHP_SELF = &$_SERVER['PHP_SELF'];
+        //$_GET['page']=null;
+        $page= $_GET['page'];
+        $sql_page = "SELECT * FROM post";
+        $result_page=mysqli_query($conn,$sql_page);
+        $total_article=mysqli_num_rows($result_page);      
+        $view_article =10;
+        if(!$page)$page=1;
+        $start =($page-1)*$view_article;
+        $query = "SELECT * FROM post order by idx desc limit $start,$view_article";
+        mysqli_query($conn,"set names utf8");
+        $cot = 1;
+        $result_data=mysqli_query($conn,$query);
+                while($data=mysqli_fetch_array($result_data)){     $cot++;             
+        ?>
+            <li><strong><?php echo "NO:",$data['idx']?></strong>
+            <a href = "#"><?php echo "" .$data[ 'title' ],"&nbsp" ?></a>
+            <span><?php echo $data[ 'views' ] ?></span>
+            <span><?php echo  $_SESSION['userID'] ?></span>
+            <span><?php echo $data[ 'created' ] ?></span></li>
+            
+           
+
+                   
+<?php  }
+        include '../sg/page.php';
+
+?>  
+ </ul>
+            </div>
 </body>
-</html>
+
+
+
+
+
+
+
+
+
+
+    
+
+

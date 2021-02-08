@@ -27,7 +27,7 @@
             <!-- LOGIN & MEMBER -->
             <div class = "homeButton">
                 <button class="navbar_btn" id="navbar_btn1" onclick="location.href='./LogOut.php'">로그아웃</button>
-                <button class="navbar_btn" id="navbar_btn2">글쓰기</button>
+                <button class="navbar_btn" id="navbar_btn2" onclick="location.href='./writing.php'">글쓰기</button>
             </div>
         </div>
     <!-- MENUBAR -->

@@ -16,8 +16,6 @@
     
 ?>
 
- 
-
 <?php
         // board테이블에서 idx를 기준으로 내림차순해서 5개까지 표시
           $sql = "select * from post order by idx desc limit 0,5";
@@ -27,7 +25,7 @@
  
 ?>
 
-    <?php echo '<p>',"NO:",$postDATA['idx']?>
+<?php echo '<p>',"NO:",$postDATA['idx']?>
 
 <?php echo "제목:" .$postDATA[ 'title' ],"&nbsp" ?>
 
@@ -49,11 +47,6 @@
 </div>
 <div class="body"></div>
 <div class="footer"></div>   
-                           
-                      
-
-                    
-
 
             <!-- 검색 폼 영역 -->
             <li id='liSearchOption'>
