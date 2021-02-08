@@ -23,7 +23,7 @@ session_start()?>
        
         $PHP_SELF = &$_SERVER['PHP_SELF'];
         //$_GET['page']=null;
-        $page= $_GET['page'];
+        $page= $_GET['page'] ?? NULL;
         $sql_page = "SELECT * FROM post";
         $result_page=mysqli_query($conn,$sql_page);
         $total_article=mysqli_num_rows($result_page);      
@@ -34,12 +34,14 @@ session_start()?>
         mysqli_query($conn,"set names utf8");
         $cot = 1;
         $result_data=mysqli_query($conn,$query);
-                while($data=mysqli_fetch_array($result_data)){     $cot++;             
+                while($data=mysqli_fetch_array($result_data)){  
+                    $id=$data['idx'];
+                    $cot++;             
         ?>
             <li><strong><?php echo "NO:",$data['idx']?></strong>
-            <a href = "#"><?php echo "" .$data[ 'title' ],"&nbsp" ?></a>
+            <a href = "../sg/view.php?idx=<?php echo $id?>"><?php echo "" .$data[ 'title' ],"&nbsp" ?></a>
             <span><?php echo $data[ 'views' ] ?></span>
-            <span><?php echo  $_SESSION['userID'] ?></span>
+            <span><?php echo  $data['id'] ?></span>
             <span><?php echo $data[ 'created' ] ?></span></li>
             
            
