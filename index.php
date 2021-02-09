@@ -32,7 +32,6 @@
         <li class="navbar__menu__item" data-link="#about"><a href="./php/light/news.php"> News</a></li>
         <li class="navbar__menu__item" data-link="#skills"><a href="./php/light/light_game.php">Coin</a></li>
         <li class="navbar__menu__item" data-link="#work">Information</li>
-        <li class="navbar__menu__item active" data-link="#testimonials"><a href="./php/sg/view.php">post</a></li>
         <li class="navbar__menu__item active" data-link="#contact"><a href="./php/light/login.php">Login</a></li>
       </ul>
       <!-- Toggle button -->

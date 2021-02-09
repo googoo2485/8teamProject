@@ -25,15 +25,15 @@
     <nav id="navbar">
       <div class="navbar__logo">
         <i class="fab fa-diaspora"></i>
-        <img src="../nav_logo.png" alt="logo" class="nav-logo">
+        <img src="./php/img/nav_logo.png" alt="logo" class="nav-logo">
       </div>
       <ul class="navbar__menu">
-        <li class="navbar__menu__item" data-link="#home">Community</li>
-        <li class="navbar__menu__item" data-link="#about">News</li>
-        <li class="navbar__menu__item" data-link="#skills">Coin</li>
+        <li class="navbar__menu__item" data-link="#home"><a href="./php/light/community.php"> Community</a></li>
+        <li class="navbar__menu__item" data-link="#about"><a href="./php/light/news.php"> News</a></li>
+        <li class="navbar__menu__item" data-link="#skills"><a href="./php/light/light_game.php">Coin</a></li>
         <li class="navbar__menu__item" data-link="#work">Information</li>
-        <li class="navbar__menu__item active" data-link="#testimonials"><a href="./php/sub/commu.php">post</a></li>
-        <li class="navbar__menu__item active" data-link="#contact"><a href="./php/sg/LogOut.php">Logout</a></li>
+        <li class="navbar__menu__item active" data-link="#testimonials"><a href="./php/sg/view.php">post</a></li>
+        <li class="navbar__menu__item active" data-link="#contact"><a href="./php/sg/LogOut.php">LogOut</a></li>
       </ul>
       <!-- Toggle button -->
       <button class="navbar__toggle-btn">
@@ -79,7 +79,7 @@
          <div class="work__projects">
            <a href="" class="project" target="blank" data-type="front-end">
              <img
-               src="imgs/bitcoin.png"
+               src="./php/img/bitcoin.png"
                alt="bitcoin"
                class="project__img"
              />
@@ -96,7 +96,7 @@
            >
              <img
                class="project__img"
-               src="imgs/cme.jpg"
+               src="./php/img/cme.jpg"
                alt="navbar"
              />
              <div class="project__description">
@@ -110,42 +110,42 @@
              data-type="front-end"
              target="blank"
            >
-             <img class="project__img" src="imgs/ether.png" alt="navbar" />
+             <img class="project__img" src="./php/img/ether.png" alt="navbar" />
              <div class="project__description">
                <h3>Etherium</h3>
                <span>All information about Ehterium</span>
              </div>
            </a>
            <a href="" class="project" data-type="back-end">
-             <img class="project__img" src="imgs/grayscale.png" alt="" />
+             <img class="project__img" src="./php/img/grayscale.png" alt="" />
              <div class="project__description">
                <h3>Grayscale</h3>
                <span>All information about Grayscale</span>
              </div>
            </a>
            <a href="" class="project" data-type="back-end">
-             <img class="project__img" src="imgs/klaytn.png" alt="" />
+             <img class="project__img" src="./php/img/klaytn.png" alt="" />
              <div class="project__description">
                <h3>klaytn</h3>
                <span>All information about Klaytn</span>
              </div>
            </a>
            <a href="" class="project" data-type="mobile">
-             <img class="project__img" src="imgs/polkadot.png" alt="" />
+             <img class="project__img" src="./php/img/polkadot.png" alt="" />
              <div class="project__description">
                <h3> Polkadot</h3>
                <span>All information about Polkadot</span>
              </div>
            </a>
            <a href="" class="project" data-type="mobile">
-             <img class="project__img" src="imgs/swarm.png" alt="" />
+             <img class="project__img" src="./php/img/swarm.png" alt="" />
              <div class="project__description">
                <h3>Swarm</h3>
                <span>All information about Swarm</span>
              </div>
            </a>
            <a href="" class="project" data-type="mobile">
-             <img class="project__img" src="imgs/doge.png" alt="" />
+             <img class="project__img" src="./php/img/doge.png" alt="" />
              <div class="project__description">
                <h3>Doge</h3>
                <span>All information about Doge</span>
@@ -162,7 +162,7 @@
         <div class="flex-item">
 
           <img
-          src="imgs/page.png"
+          src="./php/img/page.png"
           alt="page"
           class="testimonial-avatar"
         />
