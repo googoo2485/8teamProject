@@ -26,7 +26,6 @@ if($result){
     <script>alert("회원가입에 성공하셨습니다.")</script>
     
     <?php
-
     header('Location:../light/login.php');
 }
 

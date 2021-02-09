@@ -96,11 +96,14 @@ button {
     position: fixed;
     z-index: 3;
 }
-.menuBox a{
+.menuBox a{  
+   list-style: none;     
+}
+.footer_button{
     width: 80px;
     height: 40px;
    align-items: center;
-   font-size: 12px;
+   font-size: 14px;
    grid-row-start: 2;
    grid-row-end: 6;
    grid-column-start:19;
@@ -110,34 +113,65 @@ button {
    border-radius: 20px;
    transition: background-color .5s;
    z-index: 9999;
-   list-style: none;
+   text-align: center;
+   font-family: 'AaCassiopeia';
 }
+.footer_del{
+    width: 80px;
+    height: 40px;
+   align-items: center;
+   font-size: 14px;
+   grid-row-start: 2;
+   grid-row-end: 6;
+   grid-column-start:17;
+   grid-column-end:17;
+   background-color: rgb(0, 0, 0);
+   color: white;
+   border-radius: 20px;
+   transition: background-color .5s;
+   z-index: 9999;
+   text-align: center;
+   font-family: 'AaCassiopeia';
+}
+.footer_modify{
+    width: 80px;
+    height: 40px;
+   align-items: center;
+   font-size: 14px;
+   grid-row-start: 2;
+   grid-row-end: 6;
+   grid-column-start:18;
+   grid-column-end:18;
+   background-color: rgb(0, 0, 0);
+   color: white;
+   border-radius: 20px;
+   transition: background-color .5s;
+   z-index: 9999;
+   text-align: center;
+   font-family: 'AaCassiopeia';
+}
+
 .menuBox a:hover{
     background-color: tomato;
+
+   
+}
+#list{
+    margin-top: 10px;
 }
 #box{
-  grid-column-start: 1;
-  grid-column-end: 20;
-  grid-row-start: 6;
-  grid-row-end: 6;
+  grid-column-start: 18;
+  grid-column-end: 22;
+  grid-row-start: 5;
+  grid-row-end: 5;
   font-size: 16px;
   text-align: center;
-  margin-top: 50px;
   font-family: 'AaCassiopeia';
-  background-color: transparent;
-  cursor: pointer;
-  outline: none;
-    line-height: 0;
-    border-radius: 2px;
-    position: relative;
+  
     text-align: center;
     box-sizing: border-box;
-  min-width: 27px;
-  margin: 0 1px 0 0;
     padding: 0 5px;
-  width: 170px;
-    height: 30px;
-    
+  
 }
 #box2{
   grid-column-start: 2;
@@ -153,6 +187,19 @@ button {
   grid-row-end: 41;
   
 }
-
+.viewBox{
+    font-size: 16px;
+    font-family: 'AaCassiopeia';
+    grid-column-start: 22;
+    grid-column-end: 26;
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
+.post{
+    grid-column-start: 9;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
 
 

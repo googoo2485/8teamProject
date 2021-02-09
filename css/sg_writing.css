@@ -31,13 +31,24 @@ li{
 }
 #userID{
    grid-area: 2/20;
-    color: aqua;
+    color: black;
     font-size: 28px;
+    font-family:'AaCassiopeia' ;
+}
+@font-face{
+    font-family: 'AaCassiopeia';
+    src:url(../font/AaCassiopeia.ttf) format('truetype');
 }
 #logo{
-    grid-area:4/2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
 }
-
+.logo_back{
+    width: 200px;
+    height: 50px;
+}
 .girdbox{
 
 }
@@ -193,4 +204,7 @@ Title{
    
     background-color: tomato;
     color: white;
+}
+.logo_back{
+    background-image: url(../php/img2/city.gif);
 }

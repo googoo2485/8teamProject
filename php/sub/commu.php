@@ -9,7 +9,7 @@ session_start()?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community</title>
-    <link rel = "stylesheet" href = "../../css/commu.css">
+    <link rel = "stylesheet" href = "../../css/commu.css?after">
 </head>
 <body>
 <div class= "commu_header">
@@ -35,24 +35,28 @@ session_start()?>
         $cot = 1;
         $result_data=mysqli_query($conn,$query);
                 while($data=mysqli_fetch_array($result_data)){  
+
+
+                            
                     $id=$data['idx'];
                     $cot++;             
         ?>
             <li><strong><?php echo "NO:",$data['idx']?></strong>
             <a href = "../sg/view.php?idx=<?php echo $id?>"><?php echo "" .$data[ 'title' ],"&nbsp" ?></a>
-            <span><?php echo $data[ 'views' ] ?></span>
+            <span><?php echo $data['views'] ?></span>
             <span><?php echo  $data['id'] ?></span>
             <span><?php echo $data[ 'created' ] ?></span></li>
-            
-           
-
-                   
+                                     
 <?php  }
-        include '../sg/page.php';
-
-?>  
- </ul>
-            </div>
+    ?> 
+</ul>
+</div>
+<div class="grid_container">
+<div class="post">
+    <button>글쓰기</button>
+</div>
+<div class="pagee"><?php include '../sg/page.php';?></div>
+</div>
 </body>
 
 

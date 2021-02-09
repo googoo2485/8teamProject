@@ -1,4 +1,5 @@
 <?php  
+
 $total_page= ceil($total_article/$view_article);
 
 if($page%10){
@@ -21,11 +22,11 @@ if($next_group>$total_page){
 if($page != 1){echo "&nbsp;&nbsp;<a href=$PHP_SELF?page=1>First</a>";
 }
 else{
-echo "First";
+echo "First &nbsp;&nbsp;";
 }
 
 // 이전 그룹이동
-if($page !=1)echo "<a href=$PHP_SELF?page=$prev_group>왼쪽그룹</a>";
+if($page !=1)echo "<a href=$PHP_SELF?page=$prev_group>◀</a>";
 
 for($i=$start_page;$i<$end_page;$i++){
 	if($i>$total_page)break;
@@ -38,7 +39,7 @@ else{
 
 //다음그룹이동
 if($page!=$total_page){
-	echo "&nbsp;&nbsp; <a href=$PHP_SELF?page=$next_group>다음그룹</a>";
+	echo "&nbsp;&nbsp; <a href=$PHP_SELF?page=$next_group>▶</a>";
 }
 
 

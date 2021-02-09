@@ -1,5 +1,5 @@
-<?php include 'idConnect.php';
-session_start() ?>
+<?php include 'session_loginCheck.php'; ?>
+<?php include 'idConnect.php';?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -12,15 +12,14 @@ session_start() ?>
 </head>
 <body>
     <div class= "top"></div>
-    
     <div class="header">
         <div id="logo">
-           logo
+           <img class="logo_back" src="/php/img2/8ver.png" alt="">
         </div>
         
         <div id="userID"><?php 
-        echo $_SESSION["userID"];
-        ?></div>
+         echo $_SESSION["userID"];
+         ?></div>
         
     </div>
 
@@ -28,7 +27,8 @@ session_start() ?>
     <div class="writingContainer">       
         <div class="gridBox" id="box"></div>
             <div class="gridBox" id="box2">
-    <form action="./postCheck.php" method="POST">
+        <form action="./postCheck.php" method="POST">
+       
         <div class="Title">
             <ul>
                 <li><textarea name="title" class="textarea_tit" placeholder="제목을 입력하세요"></textarea></li>
