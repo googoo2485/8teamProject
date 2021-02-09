@@ -1,4 +1,4 @@
-<?php include 'session_loginCheck.php'; ?>
+<?php include './session_loginCheck.php'; ?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -47,8 +47,8 @@ include 'idConnect.php';
     <a class ="footer_button" href="../sub/commu.php"><p id="list">게시글로</p></a>
 
       <?php if($_SESSION["userID"] == $rows['id']){
-    ?><a class ="footer_modify" href="./modify.php?idx=<?php echo $idx?>" role="button"><p id="list">수정</p></a>
-      <a class ="footer_del" href="./delete.php?idx=<?php echo $idx?>" role="button"><p id="list">삭제</p></a>
+    ?><a class ="footer_modify" href="./modify.php?idx=<?php echo $idx?>" type="button"><p id="list">수정</p></a>
+      <a class ="footer_del" href="./delete.php?idx=<?php echo $idx?>" type="button"><p id="list">삭제</p></a>
           <?php
           }
           ?>

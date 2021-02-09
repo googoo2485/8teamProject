@@ -22,7 +22,6 @@ session_start()?>
 <?php
        
         $PHP_SELF = &$_SERVER['PHP_SELF'];
-        //$_GET['page']=null;
         $page= $_GET['page'] ?? NULL;
         $sql_page = "SELECT * FROM post";
         $result_page=mysqli_query($conn,$sql_page);
@@ -53,7 +52,7 @@ session_start()?>
 </div>
 <div class="grid_container">
 <div class="post">
-    <button>글쓰기</button>
+    <a href="../sub/commu.php"><p>글쓰기</p></a>
 </div>
 <div class="pagee"><?php include '../sg/page.php';?></div>
 </div>

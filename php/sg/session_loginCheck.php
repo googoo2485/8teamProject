@@ -1,6 +1,5 @@
 
 <?php 
-
 session_start();
 $log_check =  $_SESSION["log_check"];
 if(empty($log_check))

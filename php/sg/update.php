@@ -1,23 +1,17 @@
 <?php include 'session_loginCheck.php'; ?>
-<?php 
-include 'idConnect.php';
+<?php include 'idConnect.php';
 
-$title = $_POST['title'];
-$content = $_POST['content'];
-$idx = $_GET['idx'];
-$sql = "update post set title='$title',content='$content' where idx ='$idx' ";
-
-$result = mysqli_query($conn,$sql) or die(mysqli_error($conn));
+$ID=$_SESSION["userID"];
+$idx = $_REQUEST['idx'];
+$title = $_REQUEST['title'];
+$content  = $_REQUEST['content'];
+$sql_view = "update post set title='$title',content='$content' where idx = $idx";
 
 
-if($result){
+if($result_view = mysqli_query($conn,$sql_view)){
     ?>
     <script>alert("내용이 수정되었습니다.")</script>
 <?php
-
-
-
-
 
 $link = "view.php?idx=$idx";
 header("Location:".$link);
@@ -28,6 +22,8 @@ else{
 <?php
 }
 
-
+               
 
 ?>
+
+

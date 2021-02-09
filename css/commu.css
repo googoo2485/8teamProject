@@ -73,3 +73,6 @@ li{
     grid-column-start: 5;
     grid-column-end: 10;
 }
+.post a{
+    background-color: rgba(143, 143, 233, 0.555);
+}

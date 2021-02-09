@@ -13,7 +13,7 @@ if($result->num_rows==1){?>
 <?php 
  $_SESSION["log_check"] = true;
  $_SESSION["userID"] = $id;
- header('Location:./index_result.php?after'); 
+ header('Location:../../index_result.php'); 
    
 
 
