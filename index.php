@@ -25,7 +25,7 @@
     <nav id="navbar">
       <div class="navbar__logo">
         <i class="fab fa-diaspora"></i>
-        <img src="../nav_logo.png" alt="logo" class="nav-logo">
+        <img src="./php/img/nav_logo.png" alt="logo" class="nav-logo">
       </div>
       <ul class="navbar__menu">
         <li class="navbar__menu__item" data-link="#home"><a href="./php/light/community.php"> Community</a></li>
