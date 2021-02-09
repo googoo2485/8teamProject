@@ -428,6 +428,10 @@ button:hover{
   margin: 32px 0;
 }
 
+.contact__email{
+  font-size : 1rem;
+}
+
 .contact__links {
   font-size: var(--font-large);
   margin: 24px 0;

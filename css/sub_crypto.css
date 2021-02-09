@@ -1,0 +1,22 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+body table{
+    width : 100%;
+    height : auto;
+}
+body table thead tr{
+    height : 50px;
+    border-radius: 3px;
+    color : white;
+   background-color :rgb(8, 0, 80);
+   text-align : center;
+}
+
+body table tbody tr:nth-child(2n){
+    background-color: rgb(238, 236, 255);
+}
+
+body table tbody tr{
+    text-align : center;
+}

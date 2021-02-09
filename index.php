@@ -9,7 +9,7 @@
       content="8ver blockchain team"
     />
     <meta name="author" content="8VER" />
-    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <link rel="icon" type="image/png" href="./php/img/favicon.png?after">
     <script
       src="https://kit.fontawesome.com/9eb162ac0d.js"
       crossorigin="anonymous"
@@ -205,9 +205,8 @@
         <!-- Contact -->
     <section id="contact" class="section">
       <h1 class="contact__title">8VER</h1>
-      <h2 class="contact__email">    
-        ABOUT /  TERMS OF SERVICE  /  FAQ  /  PRIVACY POLICY
-      </h2>
+
+      <a class = "contact__email" href="./php/sub/about.php">ABOUT</a><span>'&nbsp'</span><span>'&nbsp'</span><a class = "contact__email" href="./php/sub/crypto.php">Crypto Currency</a><span>'&nbsp'</span><span>'&nbsp'</span><a href="./php/sub/terms.php">TERMS OF SERVICE</a><span>'&nbsp'</span><span>'&nbsp'</span><a href="./php/sub/faq.php">FAQ</a><span>'&nbsp'</span><span>'&nbsp'</span><a href="./php/sub/privacy.php">PRIVACY POLICY</a>
       <div class="contact__links">
         <a href="#" target="_blank">
           <i class="fa fa-linkedin-square"></i>
