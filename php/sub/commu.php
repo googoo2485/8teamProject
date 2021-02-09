@@ -52,7 +52,7 @@ session_start()?>
 </div>
 <div class="grid_container">
 <div class="post">
-    <a href="../sub/commu.php"><p>글쓰기</p></a>
+    <a href="../sg/writing.php?after"><p>글쓰기</p></a>
 </div>
 <div class="pagee"><?php include '../sg/page.php';?></div>
 </div>
