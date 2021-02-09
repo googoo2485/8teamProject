@@ -5,87 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>8ver</title>
    
-    <link rel="stylesheet" href="./css/sub_body.css">
-    <link rel="stylesheet" href="./css/sub_headStyle!.css">
+    <link rel="stylesheet" href="./css/sub_body2.css">
     <link rel="stylesheet" href="./css/light_Login!.css">
     <link rel="stylesheet" href="./css/light_signUp.css">
     <link rel="stylesheet" href="./css/sub_footer.css">
     <link rel="stylesheet" href="./css/sg_tabLinkStyle.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/af0efa6459.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.4.4.min.js"></script>
     
+    <!-- light_header -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+    <!-- <link rel="stylesheet" href="./css/light_head.css"> -->
+
+
 </head>
-<body>
-<!-- HEADER -->
-<div id="header">
-    <!-- LOGO -->
-    <img id="img_navbar_logo" src="./php/img/logo.png" alt="">
-        <!-- SEARCH -->
-        <div class="navbar_search">
-            <input id="navbar_input" type="text" placeholder="검색어 입력">
-            <button id="navbar_searchButton">검색</button>
+<body onLoad="proc()">
+<div class = "whole">
+    <!-- 홈화면 헤더! -->
+    <div class = "home">
+        <!-- 홈화면 헤더 영상 -->
+        <video class = "home_header" muted autoplay loop src="./php/img2/header3.mp4"></video>
+        <img class = "home_logo" src="./php/img2/8ver1.png" alt="logo">
+        <!-- 로그인, 글쓰기 버튼 -->
+        <div class = "homeButton">
+            <button class="navbar_btn" id="navbar_btn1" onclick="location.href='./php/light/login.php'">Login</button>
+            <button class="navbar_btn" id="navbar_btn2">Post</button>         
         </div>
-            <!-- LOGIN & MEMBER -->
-            <div class = "homeButton">
-               
-                <button class="navbar_btn" id="navbar_btn1" onclick="location.href='./php/light/login.php'">로그인</button>
-                <button class="navbar_btn" id="navbar_btn2">글쓰기</button>
-                           
+        <div class="home_search">
+            <input class ="home_input" type="text" placeholder="Please write down here">
+            <button class ="home_button">Search</button>
+        </div>
+    </div>
+    
+
+    <!-- body grid -->
+    <div class = "gridWrapper">
+        
+        <div class = "gridBox0">
+            <div class = "imgLink">
+                <img class = "img_commuLink"src="./php/img2/link1.png" alt="">
+                <img class = "img_newsLink" src="./php/img2/link2.jpg" alt="">
+                <img class = "img_coinLink" src="./php/img2/link3.jpg" alt="">
+                <img class = "img_noticeLink" src="./php/img2/link4.jpg" alt="">
+                <img class = "img_inforLink" src="./php/img2/link5.png" alt="">
             </div>
-</div>
-    <!-- MENUBAR -->
-        <ul class="navbar_menu">
-            <li class="navbar_menu_item">커뮤니티</li>
-            <li class="navbar_menu_item">뉴스</li>
-            <li class="navbar_menu_item">코인/시세</li>
-            <li class="navbar_menu_item">정보</li>
-            <li class="navbar_menu_item">공지</li>
-        </ul>
-
-    <!-- BODY -->
-
-    <div id = "gridWrapper">
-
-        <div id = "gridBox1" class = "gridBox">
-            <!-- <img id = "home" src="./php/img2/blue.png" alt="test"> -->
         </div>
-        <br>
-        <div id = "gridBox2" class = "gridBox">
-            <div id = "coding">
-                Programming
+        <div class = "gridBox1" class = "gridBox">
+            <!-- <div class = "tab">TAB</div> -->
+            <!-- <div class = "iso-text">MENU</div> -->
+            <h2>MENU LINK</h2>
+            <br><br><div class = "linkWrapper">
+                <h2 class = "commuLink"><a href = "">Community</a></h2>
+                <h2 class = "newsLink"><a href = "">News</a></h2>
+                <h2 class = "coinLink"><a href = "">Coin</a></h2>
+                <h2 class = "noticeLink"><a href = "">Notice</a></h2>
+                <h2 class = "inforLink"><a href = "">Information</a></h2>
             </div>
-            <div id = "company">Company</div>
-            <div id = "business">Business</div>
         </div>
-
-        <div id = "gridBox3" class = "gridBox">
-            <ul>
-                <li>암호화폐 종목 배너</li>
-
-            </ul>
+        
+        <div class = "gridBox2">
+        <!-- 암호화폐 시세 -->
+        <table class = "table">
+            <tr>
+                <th>Crypto Currency</th>
+                <th>Prices from Bithumb</th>
+            </tr>
+            <tr class = "BTC">
+                <td><a href = "https://www.bithumb.com/trade/order/BTC_KRW" target = "_blank">BTC</a></td>
+                <td id="bithumb_BTC"></td>
+            </tr>
+            <tr class = "ETH">
+                <td><a href = "https://www.bithumb.com/trade/order/ETH_KRW" target = "_blank">ETH</a></td>
+                <td id="bithumb_ETH"></td>
+            </tr>
+            <tr class = "XRP">
+                <td><a href = "https://www.bithumb.com/trade/order/XRP_KRW" target = "_blank">XRP</a></td>
+                <td id="bithumb_XRP"></td>
+            </tr>
+            <tr>
+                <td>LATEST</td>
+                <td colspan="4" id="lastUpdate"></td>
+            </tr>
+        </table>
         </div>
-        <?php
+        
+        <div class = "gridBox3">
+            <ul class = "gov">
+                <br><h1>Blockchain Media</h1><br>
+                <article class = "case">
+                    <a class = "title" href="https://www.blockmedia.co.kr/archives/162133" target = "_blank">[BLOCKFESTA 2020]</a>
+                    <div class = "gov_img">
+                        <a href="https://www.blockmedia.co.kr/archives/162133" target = "_blank"><img src="./php/img2/block0.png" alt=""></a>
+                    </div>
+                </article>
 
-        require_once __DIR__ . '/../vendor/autoload.php'; // Autoload files using Composer autoload
+                <article class = "case">
+                    <a class = "title" href="https://www.blockmedia.co.kr/archives/161645" target = "_blank">[Law enforcement]</a>
+                    <div class = "gov_img">
+                        <a href="https://www.blockmedia.co.kr/archives/161645" target = "_blank"><img src="./php/img2/block1.jpg" alt=""></a>
+                    </div>
+                </article>
 
-        // use\RestApis\Blockchain\Constants;
+                <article class = "case">
+                    <a class = "title" href="https://www.blockmedia.co.kr/archives/161262" target = "_blank">[Shinhan Bank]</a>
+                    <div class = "gov_img">
+                        <a href="https://www.blockmedia.co.kr/archives/161262" target = "_blank"><img src="./php/img2/block2.jpg" alt=""></a>
+                    </div>
+                </article>
 
-        $exchanges = $instance->exchanges()->get(0,50);
-        print_r($result);
-        $symbols = $instance->symbols()->get(0,50);
-        ?>
+                <article class = "case">
+                    <a class = "title" href="https://www.blockmedia.co.kr/archives/160918" target = "_blank">[Ground X]</a>
+                    <div class = "gov_img">
+                        <a href="https://www.blockmedia.co.kr/archives/160918" target = "_blank"><img src="./php/img2/block3.png" alt=""></a>
+                    </div>
+                </article>
 
-        ?>
-        <div id = "gridBox4" class = "gridBox">
-            <ul>
-                <li>정부 사업</li>
             </ul>
         </div>
     </div>
 
     <!-- FOOTER -->
-    <article class="footer">
-        <nav class="footer_wrap">
+    <div class="footer">
+        <div class="footer_wrap">
             <ul id = "footer1">
                 <a class = "footerlink" href="./php/sub/about.php" target = "_blank"><li class="footer_subTitle">ABOUT</li></a>
             </ul>
@@ -98,14 +142,17 @@
             <ul id = "footer4">
                 <a class = "footerlink" href="./php/sub/privacy.php" target = "_blank"><li class="footer_subTitle">PRIVACY POLICY</li></a>
             </ul>
-        </nav>
-        <div id = "warning">
+        </div>
+        <div class = "warning">
             Our site sometimes includes links and citation links to materials from other sites. Such content is not responsible for the content or privacy practices of other sites and expressly denies any liability arising from such content or practices. Under no circumstances will 8ver be liable for any damages or damages arising from the content, practices or other media of third-party links.
         </div><br>
         <footer>
             <p>© 2021 8ver</p>
         </footer>
-    </article>
+    </div>
+</div>
+
+    <script src = "./js/crypto.js"></script>
 </body>
 </html>
 

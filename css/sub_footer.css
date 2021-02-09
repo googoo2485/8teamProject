@@ -1,20 +1,23 @@
+.footer {
+  text-align: center;
+  list-style: none;
+  font-size: 1em;
+  margin-bottom : 100px;
+  color : white;
+}
+
 .footer_wrap {
   display: grid;
   margin-top : 10%;
   margin-bottom: 3%;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(4, 1fr);
+  color : white;
 }
-.footer {
-  /* background-color: #87ceeb; */
-  text-align: center;;
-  list-style: none;
-  font-size: 1em;
-  margin-bottom : 100px;
-}
+
 /* 다른 링크 속 a태그 색깔 안바뀌면 얘때문에 그럼! 나중에 색깔 바꿔야 하면 속성 inherit으로 바꾸기*/
 a{
-  color : black;
+  color : white;
   text-decoration: none;
 }
 .footer_subTitle {
@@ -24,6 +27,7 @@ a{
   grid-column-end: 7;
   grid-row-start: 5;
   grid-row-end: 5;
+  color : white;
 }
 #warning{
   display : grid;
@@ -31,31 +35,29 @@ a{
   margin-right : 10%;
   margin-bottom : 2%;
   font-size : 10px;
-  color: rgba(18, 0, 82, 0.603);
+  /* color: rgba(18, 0, 82, 0.603); */
+  color : white;
 }
 #footer1 {
   grid-column-start: 4;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 3;
-  color : black;
-  /* background-color :crimson; */
+  color : white;
 }
 #footer2 {
   grid-column-start: 5;
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 3;
-  color : black;
-
-  /* background-color: rgb(223, 214, 88); */
+  color : white;
 }
 #footer3 {
   grid-column-start: 6;
   grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 3;
-  color : black;
+  color : white;
   /* background-color: rgb(118, 201, 187); */
 }
 #footer4 {
@@ -63,7 +65,7 @@ a{
   grid-column-end: 7;
   grid-row-start: 1;
   grid-row-end: 3;
-  color : black;
+  color : white;
   /* background-color: rgb(88, 95, 192); */
 }
 

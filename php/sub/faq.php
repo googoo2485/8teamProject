@@ -9,14 +9,14 @@
 <body>
         <!-- Header 고정 -->
         <div id = "sub">
-            <div><img id = "subLogo" src="../img/logo.png" alt="logo"></div>
+            <!-- <div><img id = "subLogo" src="../img/logo.png" alt="logo"></div>
             <ul id = "subMenu">
                 <li id = "subMenu1">커뮤니티</li>
                 <li id = "subMenu2">뉴스</li>
                 <li id = "subMenu3">코인/시세</li>
                 <li id = "subMenu4">정보</li>
                 <li id = "subMenu5">공지</li>
-            </ul>
+            </ul> -->
             <div class = "subject">FAQ</div>
 
             <div class = "faq_container">
