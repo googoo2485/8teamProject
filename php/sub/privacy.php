@@ -10,7 +10,7 @@
 <body>
         <!-- Header 고정 -->
         <div id = "sub">
-            <div >
+            <!-- <div >
                 <img id = "subLogo" src="../img/logo.png" alt="logo">
             </div>
             <ul id = "subMenu">
@@ -19,7 +19,7 @@
                 <li id = "subMenu3">코인/시세</li>
                 <li id = "subMenu4">정보</li>
                 <li id = "subMenu5">공지</li>
-            </ul>
+            </ul> -->
             <div class = "subject">
                 Privacy Policy
             </div>
