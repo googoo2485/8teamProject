@@ -40,7 +40,7 @@ function setUpbitData(){
   .fail(function(){
     $("#tmp").text( "API 접근 중 에러." );
   })
-  setTimeout(setUpbitData, 8000);
+  setTimeout(setUpbitData, 4000);
 }
 $(function() {
   var color = localStorage.getItem("test_upbit_color");
@@ -51,3 +51,9 @@ function setColor(color){
   localStorage.setItem("test_upbit_color", color);
   $("body").css("color", color);
 }
+
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-109501118-1');

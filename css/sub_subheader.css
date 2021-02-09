@@ -132,3 +132,11 @@
     padding : 10px;
 }
 
+/* Crypto */
+#crypto_container{
+    margin :  20%;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    margin-top : 50px;
+}
