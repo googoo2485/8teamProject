@@ -15,11 +15,11 @@
 include 'idConnect.php';
                 $ID=$_SESSION["userID"];
                 $number = $_GET['idx'];
-                $query = "SELECT * FROM post WHERE idx = $number";                               
+                $query = "SELECT * FROM post WHERE idx = '$number'";                               
                 $result =mysqli_query($conn,$query) or die(mysqli_error($conn));;
                 $rows = mysqli_fetch_array($result);
                 $idx = $rows['idx'];
-                $sql_view = "update post set views=views+1 where idx = $number";
+                $sql_view = "update post set views=views+1 where idx = '$number'";
                 $result_view = mysqli_query($conn,$sql_view);
                 
         ?>

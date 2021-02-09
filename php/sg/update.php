@@ -5,7 +5,7 @@ $ID=$_SESSION["userID"];
 $idx = $_REQUEST['idx'];
 $title = $_REQUEST['title'];
 $content  = $_REQUEST['content'];
-$sql_view = "update post set title='$title',content='$content' where idx = $idx";
+$sql_view = "update post set title='$title',content='$content' where idx = '$idx'";
 
 
 if($result_view = mysqli_query($conn,$sql_view)){

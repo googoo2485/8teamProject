@@ -3,7 +3,7 @@
 
 include './session_loginCheck.php';
 include 'idConnect.php';
-$check ="select id from post where idx = $_GET[idx]";
+$check ="select id from post where idx = '$_GET[idx]'";
 $result = mysqli_query($conn,$check);
 
 if($result->num_rows==1){

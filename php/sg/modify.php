@@ -1,7 +1,7 @@
 <?php 
 include 'idConnect.php';
 $idx = $_GET['idx'];
-$sql = "SELECT * FROM post WHERE idx = $idx";
+$sql = "SELECT * FROM post WHERE idx = '$idx'";
 
 $result = mysqli_query($conn,$sql);
 
